@@ -1,0 +1,199 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* END OF CSS RESET */
+
+body {
+  font-family: "Jost", sans-serif;
+  background-color: #fad961;
+  background-image: linear-gradient(90deg, #fad961 0%, #f7aa1c 100%);
+
+  color: #3d3107;
+}
+
+.container {
+  padding: 2em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav {
+  display: flex;
+  gap: 2em;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+
+  font-weight: 500;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 5em;
+
+  margin-top: 6em;
+}
+
+.info h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+
+  margin-bottom: 1em;
+
+  color: #3d2e03;
+}
+
+.info p {
+  max-width: 30rem;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+.info li {
+  max-width: 30rem;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.call_to_action {
+  font-size: 1.4rem;
+}
+
+.buttons_wrapper {
+  display: flex;
+  gap: 1em;
+
+  margin: 2em 0;
+}
+
+.download_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+
+  width: 11em;
+
+  border-radius: 8px;
+
+  padding: 0.5em 1em;
+
+  background: rgb(59, 41, 0);
+  /* color: #ffe18e; */
+  color: white;
+
+  text-decoration: none;
+
+  transition: transform 0.4s ease-in-out;
+}
+
+.download_button:hover {
+  transform: scale(1.1);
+}
+
+.download_button img {
+  width: 1.5rem;
+}
+
+.download_button__text {
+  line-height: 1.2;
+}
+
+#download_button__text-info {
+  font-size: 0.8rem;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.social img {
+  height: 1.5rem;
+}
